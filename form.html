@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Web Form</title>
+    </head>
+</html>
+
+<style>
+    body{
+    font-family: Cochin;
+    font-size: 0.9em;
+    line-height: 1.4em;
+    background-color: #85644d;
+    color: white;
+    }
+
+    .form-container{
+    display: flex;
+    justify-content: center;
+    }
+
+    form{
+    width: 350px;
+    background-color: #9b775e;
+    padding: 20px;
+    border-radius: 20px;
+    }
+
+    textarea{
+        background-color: #7c5f49;
+        padding: 10px;
+        border: none;
+        color: white;
+    }
+    
+    button{
+        display: block;
+        background-color: rgb(175, 97, 97);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        width: 100%;
+        height: 44px;
+        font-size: 1.2em;
+        margin-top: 20px;
+        transition: background-color 250ms;
+    }
+
+    button:hover{
+      background-color: rgb(184, 233, 178);
+    }
+    
+</style>
+
+<body>
+    <section class="form-container">
+        <form class="kwes-form" action="https://kwes.io/api/foreign/forms/OIew1zxJggijv3RLkK1c">
+            <p>
+              First Name: <input type="text" name="first-name" required />
+            </p>
+            <p>
+              Last name: <input type="text" name="last-name" required />
+            </p>
+            <p>
+              Email: <input type="email" name="email" required />
+            </p>
+            <p>
+              Message
+            </p>
+            <textarea name="message" placeholder="Enter your message"></textarea>
+            <button type="submit">SEND</button>
+        </form>
+    </section>
+    <script src="https://kwes.io/v2/kwes-script.js" defer></script>
+</body>
